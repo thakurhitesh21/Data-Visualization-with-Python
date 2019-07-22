@@ -1,0 +1,17 @@
+#Here we will be looking at various types of Plots that we can use to visualise our data using Python
+#Line Plots
+  #using random numbers
+  import numpy as np
+  import matplotlib.pyplot as plt
+
+  N = 50
+  x = np.random.rand(N)
+  y = np.random.rand(N)
+  colors = np.random.rand(N)
+  area = np.pi * (15 * np.random.rand(N))**2  # 0 to 15 point radii
+
+  plt.scatter(x, y, s=area, c=colors, alpha=0.5)
+  plt.show()
+  
+  #using dataframe
+  
